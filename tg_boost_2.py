@@ -45,7 +45,7 @@ def mainFunc():
 		f.write(str(newProxy))
 		f.close()
 
-	for i in range(1,step):
+	for i in range(1,step+1):
 		with open(dir_path+str(i)+".txt",'w') as prFiles:
 			# print "proxy lists created."
 			for pr in range(1,len(proxies),step):
@@ -55,7 +55,7 @@ def mainFunc():
 					pass
 		prFiles.close()
 
-	for i in range(1,step):
+	for i in range(1,step+1):
 		os.system("start cmd /c C:\\Python27\\python.exe "+ dir_path + "viewer.py " + str(i))
 
 

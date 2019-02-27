@@ -1,5 +1,6 @@
 channel = "f7g8yw"
-postNumber = "3" 
+postNumber = "4"
+postList = ["3","4"] 
 step = 5
 firstTimeout = 30
-SecondTimeout = 120
+secondTimeout = 120
