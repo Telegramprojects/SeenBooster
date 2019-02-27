@@ -76,7 +76,7 @@ time.sleep(conf.firstTimeout+10)
 runDuration = 6300
 startTime = datetime.datetime.now()
 endTime = datetime.datetime.now()
-while ((endTime - startTime).totalseconds()) <  runDuration : 
+while ((endTime - startTime).total_seconds()) <  runDuration : 
 	for i in conf.postList:
 		runThreadsWithProxies(proxies, conf.secondTimeout, i)
 		time.sleep(conf.secondTimeout+10)
